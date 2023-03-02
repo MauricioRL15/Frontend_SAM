@@ -1,0 +1,17 @@
+.formulario{
+    position: relative;
+    margin-top: 50px;
+    margin-right: 400px;
+    
+}
+.formulariohijo{
+    margin-top: 50px;
+    width: 800px;
+  height: 400px;
+  background-color: #EFEFEF;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+}
