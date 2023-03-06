@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { InventarioRoutingModule } from './inventario-routing.module';
 import { InventarioComponent } from './pages/inventario/inventario.component';
+import { SharedModule } from '../shared/shared.module';
+
 
 
 @NgModule({
@@ -11,7 +13,8 @@ import { InventarioComponent } from './pages/inventario/inventario.component';
   ],
   imports: [
     CommonModule,
-    InventarioRoutingModule
+    InventarioRoutingModule,
+    SharedModule
   ]
 })
 export class InventarioModule { }
