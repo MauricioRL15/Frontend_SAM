@@ -1,1 +1,49 @@
-<p>trabajadores works!</p>
+<div class="container"><br>
+    <div class="card-body">
+        <h1>Formulario Inventario</h1>
+        <form  >  <!–– action="upload.php" method="POST" formGroup="formtrabajador"––>
+           
+
+            <div class="row">
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">Id</label>
+                  <input type="text" class="form-control"   formControlName="id"> 
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefault05" class="form-label">Id del area</label>
+                  <input type="text" class="form-control" formControlName="id_area">
+                </div> 
+                <div class="col-md-4">
+                  <label for="validationDefault04" class="form-label">Numero de trabajador </label>
+                  <input type="text" class="form-control" formControlName="numero_trabajador ">
+                  
+                </div>
+                
+               
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="validationDefault02" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" formControlName="nombre" >
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="validationDefault03" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" formControlName="apellidos" >
+                </div>
+                
+                
+                  
+                  </div>
+              
+                <div class="col-12"><br><br>
+                  <button class="btn btn-primary" type="submit">Anadir</button>
+                </div>
+              
+              
+        </form>
+
+    </div>
+
+</div>
