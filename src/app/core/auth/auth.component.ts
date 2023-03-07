@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
@@ -44,6 +44,5 @@ error(){
     duration:5000, horizontalPosition: 'center', verticalPosition: 'bottom'
   });
 }
-  
 
 }
