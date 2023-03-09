@@ -7,6 +7,10 @@ import { HeaderComponent } from './pages/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SidenavComponent } from './pages/sidenav/sidenav.component';
 import { SharedModule } from '../shared/shared.module';
+import { InventarioComponent } from '../inventario/pages/inventario/inventario.component';
+import { TrabajadoresComponent } from '../trabajadores/pages/trabajadores/trabajadores.component';
+import { UsuariosComponent } from '../usuarios/pages/usuarios/usuarios.component';
+
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { SharedModule } from '../shared/shared.module';
     DashboardComponent,
     HeaderComponent,
     HomeComponent,
-    SidenavComponent
+    SidenavComponent,
+    InventarioComponent,
+    TrabajadoresComponent,
+    UsuariosComponent,
+
     
   ],
   imports: [

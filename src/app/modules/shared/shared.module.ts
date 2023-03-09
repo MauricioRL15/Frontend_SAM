@@ -12,6 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatSelectModule} from '@angular/material/select';
 
 // import { MatSliderModule } from '@angular/material/slider';
 // import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -42,6 +43,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatInputModule, 
     MatButtonModule,
     MatSnackBarModule,
+    MatSelectModule,
 
   ],
   exports: [
@@ -55,6 +57,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatButtonModule,
     MatInputModule,
     MatSnackBarModule, 
+    MatSelectModule,
 
   ]
 })
