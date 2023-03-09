@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
+import {MatDialogModule} from '@angular/material/dialog';
 
 // import { MatSliderModule } from '@angular/material/slider';
 // import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -44,6 +45,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatButtonModule,
     MatSnackBarModule,
     MatSelectModule,
+    MatDialogModule,
 
   ],
   exports: [
@@ -58,6 +60,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatSnackBarModule, 
     MatSelectModule,
+    MatDialogModule,
 
   ]
 })

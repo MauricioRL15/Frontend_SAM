@@ -1,6 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { TablainventarioComponent } from '../tablainventario/tablainventario.component';
+
+export interface DialogData {
+  animal: 'panda' | 'unicorn' | 'lion';
+}
+
 
 @Component({
   selector: 'app-inventario',
@@ -11,7 +18,7 @@ export class InventarioComponent implements OnInit {
 
   public forminventario!:FormGroup;
 
-  constructor(private formBuilder:FormBuilder) { }
+  constructor(private formBuilder:FormBuilder,public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.buildForm();
@@ -28,6 +35,15 @@ export class InventarioComponent implements OnInit {
       descripcion:['',Validators.required],
       
      
+    });
+  }
+
+
+  openDialog() {
+    this.dialog.open(TablainventarioComponent, {
+      data: {
+        animal: 'panda',
+      },
     });
   }
 

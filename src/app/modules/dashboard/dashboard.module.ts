@@ -7,9 +7,9 @@ import { HeaderComponent } from './pages/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SidenavComponent } from './pages/sidenav/sidenav.component';
 import { SharedModule } from '../shared/shared.module';
-import { InventarioComponent } from '../inventario/pages/inventario/inventario.component';
-import { TrabajadoresComponent } from '../trabajadores/pages/trabajadores/trabajadores.component';
-import { UsuariosComponent } from '../usuarios/pages/usuarios/usuarios.component';
+import { InventarioModule } from '../inventario/inventario.module';
+import { TrabajadoresModule } from '../trabajadores/trabajadores.module';
+import { UsuariosModule } from '../usuarios/usuarios.module';
 
 
 
@@ -19,16 +19,20 @@ import { UsuariosComponent } from '../usuarios/pages/usuarios/usuarios.component
     HeaderComponent,
     HomeComponent,
     SidenavComponent,
-    InventarioComponent,
-    TrabajadoresComponent,
-    UsuariosComponent,
+    
+  
+    
 
     
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule
+    SharedModule,
+    InventarioModule,
+    TrabajadoresModule,
+    UsuariosModule
+
   ]
 })
 export class DashboardModule { }
