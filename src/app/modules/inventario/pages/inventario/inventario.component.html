@@ -4,18 +4,14 @@
         <form action="upload.php" method="POST" formGroup="forminventario">  
          
             <div class="row">
-                <div class="col-md-4">
-                   <mat-form-field class="full-width-field">
-              <input matInput placeholder="Nombre" formControlName="id" >
-            </mat-form-field>  
-                </div>
-                <div class="col-md-4">
+              
+                <div class="col-md-6">
                   <mat-form-field class="full-width-field">
                     <input matInput placeholder="Numero de Serie" formControlName="numero_serie" >
                   </mat-form-field>    
                 </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <mat-form-field class="full-width-field">
                     <input matInput placeholder="Marca" formControlName="marca" >
                   </mat-form-field>   
@@ -62,13 +58,17 @@
                  
               
                   </div>
-              
-                <div class="col-12"><br><br>
-                  <button class="btn btn-primary" type="submit">Anadir</button>
-                </div>
-              
-              
+                  <div class="row">
+                    <div class="col-md-10">
+                    </div>
+                    <div class="col-md-2">
+                      <button   mat-raised-button type="submit" class="boton">Guardar</button>
+                    </div>
+                    </div>
+             
         </form>
+       
+        
         
         <button mat-button (click)="openDialog()">Mostrar tabla</button>
        

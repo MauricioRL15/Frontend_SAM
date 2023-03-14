@@ -2,7 +2,7 @@
   width: 100%;
 }
 .card-body{
-  background-color:#ffffff;
+  background-color:#f5e8e8;
 
 }
 .container{
@@ -17,37 +17,18 @@ background-color: green;}
   margin-left: auto;
   margin-right: auto;
 }
-.botons{
-  color: wheat;
-background-color: rgb(240, 95, 17);
 
-}
-.inputfile {
-  margin: start;
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-.inputfile + label {
-  font-size: 1.25em;
-  font-weight: 400;
-  color: white;
-  background-color: rgb(240, 95, 17);
-  display: inline-block;
-}
 
-.inputfile:focus + label,
-.inputfile + label:hover {
-background-color: rgb(240, 95, 17);
 
+.contenedor{
+  
+    display: flex;
+    flex-direction: column;
+  
+  
+  
 }
-.inputfile + label {
-cursor: pointer; /* "hand" cursor */
-}
-.inputfile:focus + label {
-outline: 1px dotted rgb(153, 48, 3);
-outline: coral auto 5px;
-}
+.contenedor  {
+    width: 100%;
+  }
+  

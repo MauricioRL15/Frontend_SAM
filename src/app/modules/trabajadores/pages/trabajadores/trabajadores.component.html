@@ -1,44 +1,56 @@
 <div class="container"><br>
     <div class="card-body">
         <h1>Formulario Inventario</h1>
-        <form  >  <!–– action="upload.php" method="POST" formGroup="formtrabajador"––>
+
+           <form action="upload.php" method="POST" formGroup="formtrabajador" >  
            
 
-            <div class="row">
-                <div class="col-md-4">
-                  <label for="validationDefault01" class="form-label">Id</label>
-                  <input type="text" class="form-control"   formControlName="id"> 
+               <div class="row">
+               <div class="col-md-6">
+                <mat-form-field class="full-width-field">
+                  <input matInput placeholder="Nombre" formControlName="nombre" >
+                </mat-form-field>    
                 </div>
-                <div class="col-md-4">
-                  <label for="validationDefault05" class="form-label">Id del area</label>
-                  <input type="text" class="form-control" formControlName="id_area">
-                </div> 
-                <div class="col-md-4">
-                  <label for="validationDefault04" class="form-label">Numero de trabajador </label>
-                  <input type="text" class="form-control" formControlName="numero_trabajador ">
-                  
+              
+                <div class="col-md-6">
+                <mat-form-field class="full-width-field">
+                  <input matInput placeholder="Apellidos"  formControlName="apellidos" >
+                </mat-form-field>  
                 </div>
+               
                 
                
-              </div>
+                </div>
 
-              <div class="row">
-                <div class="col-md-6">
-                  <label for="validationDefault02" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" formControlName="nombre" >
-                </div>
-                
-                <div class="col-md-6">
-                  <label for="validationDefault03" class="form-label">Apellidos</label>
-                  <input type="text" class="form-control" formControlName="apellidos" >
-                </div>
-                
-                
-                  
-                  </div>
               
-                <div class="col-12"><br><br>
-                  <button class="btn btn-primary" type="submit">Anadir</button>
+                <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="full-width-field">
+                    <input matInput placeholder="Nombre del area" formControlName="id_area" >
+                    <mat-select>
+                      <mat-option value="1">Laboratorio 1</mat-option>
+                      <mat-option value="2">Laboratorio 2</mat-option>
+                      <mat-option value="3">Laboratorio 3</mat-option>
+                      <mat-option value="4">Laboratorio 4</mat-option>
+                      <mat-option value="5">Laboratorio 5</mat-option>
+                      <mat-option value="6">Laboratorio 6</mat-option>
+                      <mat-option value="7">TIC</mat-option>
+                    </mat-select>
+                  </mat-form-field>  
+                </div> 
+                <div class="col-md-6">
+                  <mat-form-field class="full-width-field">
+                    <input matInput placeholder="Matricula"  formControlName="numero_trabajador ">
+                  </mat-form-field>  
+                </div>
+                </div>
+              
+                <div class="row">
+                <div class="col-md-10">
+                </div>
+                <div class="col-md-2">
+                      <button   mat-raised-button type="submit" class="boton">Guardar</button>
+                </div>
                 </div>
               
               
